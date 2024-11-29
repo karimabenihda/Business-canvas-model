@@ -1,0 +1,146 @@
+/* General Styles */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f8f1;  /* Light beige background, pottery-themed */
+    color: #4b4b4b;  /* Dark gray text */
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  /* Logo in the top-left corner */
+  .logo {
+    position: absolute;
+    top: -30px;
+    left: 90px;
+    width: 250px; /* Adjust this to your desired size */
+    height: auto;
+  }
+  
+  /* Title Styles */
+  .canvas-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #6b4f3b;  /* Earthy brown color, like raw clay */
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Merriweather', serif; /* Elegant, handcrafted feel */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Section Styles */
+  .canvas-sections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .box {
+    background-color: #fff9f1; /* Light terracotta beige */
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px;
+    height: auto;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    border: 1px solid #e0d2c5;
+    background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Section Titles */
+  .title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #6b4f3b;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    font-family: 'Merriweather', serif;
+  }
+  
+  /* List Item Styles */
+  .list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1e1d0;
+    padding: 12px 16px;
+    margin: 5px 0;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #4b4b4b;
+    font-weight: 500;
+  }
+  
+  .item .text {
+    word-wrap: break-word;
+    flex-grow: 1;
+  }
+  
+  /* Remove Button */
+  .remove {
+    background-color: #c6b0a1;
+    color: #fff;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+  }
+  
+  .remove:hover {
+    background-color: #a78b73;
+    transform: scale(1.05);
+  }
+  
+  /* Input Field */
+  .input {
+    width: 200px;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 2px solid #e0d2c5;
+    background-color: #f9f8f1;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+  }
+  
+  .input:focus {
+    outline: none;
+    border-color: #6b4f3b;
+    box-shadow: 0 0 5px rgba(107, 79, 59, 0.4);
+  }
+  
+  .input::placeholder {
+    color: #b8a89f;
+  }
+  
