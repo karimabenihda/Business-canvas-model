@@ -1,9 +1,8 @@
-/* General Styles */
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f9f8f1;  /* Light beige background, pottery-themed */
-    color: #4b4b4b;  /* Dark gray text */
+    background-color: #f9f8f1;  
+    color: #4b4b4b; 
     margin: 0;
     padding: 0;
     position: relative;
@@ -20,28 +19,25 @@ body {
     position: relative;
   }
   
-  /* Logo in the top-left corner */
   .logo {
     position: absolute;
     top: -30px;
     left: 90px;
-    width: 250px; /* Adjust this to your desired size */
+    width: 250px;
     height: auto;
   }
   
-  /* Title Styles */
   .canvas-title {
     font-size: 36px;
     font-weight: bold;
-    color: #6b4f3b;  /* Earthy brown color, like raw clay */
+    color: #6b4f3b;  
     text-align: center;
     margin-bottom: 40px;
-    font-family: 'Merriweather', serif; /* Elegant, handcrafted feel */
+    font-family: 'Merriweather', serif; 
     text-transform: uppercase;
     letter-spacing: 2px;
   }
   
-  /* Section Styles */
   .canvas-sections {
     display: flex;
     flex-wrap: wrap;
@@ -51,7 +47,7 @@ body {
   }
   
   .box {
-    background-color: #fff9f1; /* Light terracotta beige */
+    background-color: #fff9f1; 
     border-radius: 12px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -70,7 +66,6 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   }
   
-  /* Section Titles */
   .title {
     font-size: 20px;
     font-weight: 600;
@@ -105,7 +100,6 @@ body {
     flex-grow: 1;
   }
   
-  /* Remove Button */
   .remove {
     background-color: #c6b0a1;
     color: #fff;
@@ -116,13 +110,33 @@ body {
     transition: background-color 0.3s ease, transform 0.2s ease;
     border: none;
   }
-  
+  .edit{
+    background-color: #c6b0a1;
+    color: #fff;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+  }
+  .save-edit-button{
+    background-color: #c6b0a1;
+    color: #fff;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+  }
+
+
   .remove:hover {
     background-color: #a78b73;
     transform: scale(1.05);
   }
   
-  /* Input Field */
   .input {
     width: 200px;
     padding: 14px;
@@ -143,4 +157,36 @@ body {
   .input::placeholder {
     color: #b8a89f;
   }
+
+
+.capture .input,
+.capture .remove,
+.capture .edit,
+.capture input::placeholder {
+  display: none !important;
+}
+
+.capture .save-button .edit {
+  display: none !important;
+}
+
+.capture .item .remove .edit{
+  display: none !important;
+}
+.save-button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #6b4f3b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #9f795d;
+  transform: scale(1.1);
+}
+
   
