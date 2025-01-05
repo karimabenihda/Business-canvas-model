@@ -72,7 +72,7 @@ const BusinessModelCanvas = () => {
       <div id="capture-area" className="capture-area">
         <img src={logo} alt="Logo" className="logo" />
         <h1 className="canvas-title">Business Model Canvas</h1>
-
+<p style={{textAlign:'center'}}>Please Click on a Title to Add Your Response</p>
         <div className="canvas-sections">
           {Object.keys(sections).map((section) => (
             <div key={section} className="box">
